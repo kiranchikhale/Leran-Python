@@ -1,0 +1,32 @@
+class Student:
+
+    def __init__(self,name,rollno,brand,cpu,ram):
+        self.name   = name
+        self.rollno = rollno
+        self.lap    = self.Laptop(brand,cpu,ram)
+
+    def show(self):
+        print (self.name , self.rollno)
+
+    class Laptop:
+        def __init__(self,brand,cpu,ram):
+            self.brand = brand
+            self.cpu   = cpu
+            self.ram   = ram
+        def show(self):
+            print(self.brand,self.cpu,self.ram)
+
+s1 = Student('Navin',2,"s","ss",4)
+s2 = Student('Jenny',3,"a","aa",8)
+s1.show()
+s2.show()
+s1.lap.show()
+s2.lap.show()
+
+#Lap1 = s1.lap("s","ss",4)
+#Lap2 = s2.lap("a","aa",8)
+#Lap1.show()
+#Lap2.show()
+
+#Lap3 = Student.Laptop()
+#Lap3.show()

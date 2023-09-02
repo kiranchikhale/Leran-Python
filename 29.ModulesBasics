@@ -1,0 +1,5 @@
+import calc as c
+
+#from calc import *  # not working
+b = 7
+c = c.add()

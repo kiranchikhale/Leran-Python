@@ -1,0 +1,20 @@
+class A:
+    def fun1(self):
+        print("Fun1")
+    def fun2(self):
+        print("Fun2")
+
+class B(A):
+    def fun3(self):
+        print("Fun3")
+    def fun4(self):
+        print("Fun4")
+
+class C(B):
+    def fun5(self):
+        print("Fun5")
+    def fun6(self):
+        print("Fun6")
+
+C1= C()
+C1.fun1()
